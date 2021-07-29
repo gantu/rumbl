@@ -6,9 +6,9 @@ use Mix.Config
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :rumbl, Rumbl.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "rumbl_test#{System.get_env("MIX_TEST_PARTITION")}",
+  username: "phoenix",
+  password: "School01!",
+  database: "rumbl_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
@@ -20,3 +20,4 @@ config :rumbl, RumblWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+config :pbkdf2_elixir, :rounds, 1

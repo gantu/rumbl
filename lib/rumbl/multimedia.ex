@@ -33,7 +33,7 @@ defmodule Rumbl.Multimedia do
       %Video{}
 
       iex> get_video!(456)
-      ** (Ecto.NoResultsError)
+      ** (Ecto.NoResultsError)  
 
   """
   def get_video!(id), do: Repo.get!(Video, id)

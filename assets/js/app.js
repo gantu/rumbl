@@ -2,6 +2,7 @@
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
 import "../css/app.scss"
+import Video from "./video"
 
 // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured
@@ -10,6 +11,7 @@ import "../css/app.scss"
 // Import deps with the dep name or local files with a relative path, for example:
 //
 //     import {Socket} from "phoenix"
-//     import socket from "./socket"
-//
-import "phoenix_html"
+import socket from "./socket"
+
+
+Video.init(socket, document.getElementById("video"))
