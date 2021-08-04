@@ -9,7 +9,6 @@ config :rumbl, Rumbl.Repo,
   username: "phoenix",
   password: "School01!",
   database: "rumbl_test",
-  hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
 if System.get_env("GITHUB_ACTIONS") do
